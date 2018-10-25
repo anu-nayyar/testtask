@@ -1,50 +1,36 @@
-# LoyaltyCorp Test Task
+# MailChimp List Functionality
 
-This project is the code base of the PHP Test Task for the company [Loyalty Corp][1]. 
-It is based on a really simple version of [Laravel Lumen][2].
 
-## Context
-This test task requires you to implement a new feature into an existing RESTful API.
+__Welcome to MailChimp 3.0 List features.
 
-The API is built to interact with [MailChimp via their API][3], handling CRUD operations for [LISTS][4] and [MEMBERS][5].
 
-This task assumes all interaction will take place via this API, therefore data should be stored locally and 
-only retrieved from MailChimp when required. 
+## Documentation
 
-The current API contains code which allows the creation, retrieval, update and deletion of lists. 
-You are required to add a feature to this existing code to allow the creation, retrieval update, and 
-deletion of members within a list.
+[ MailChimp Documentation ](https://developer.mailchimp.com/documentation/mailchimp/reference/lists/members/#delete-delete_lists_list_id_members_subscriber_hash) includes all the documentation related to the MailChimp List API calls.
 
-## Scope
-The implementation for [LISTS][4] have been made already. The scope of this task is to update the current code base to
-implement CRUD operations for members:
+## Latest Updates
 
-- Add members to a list
-- Update members within a list
-- Remove members from a list
-- Retrieve members from a list
+- MailChimp Calls 1.0 to use List API calls,
 
-## Requirements
-This task requirements are as follows:
 
-- Each external libraries are loaded via [composer][9]
-- The database layer used is [Doctrine][6] via the [laravel-doctrine/orm][7] package
-- The interaction with [MailChimp API][3] is made using [pacely/mailchimp-apiv3][8]
+## Prerequisites
 
-## Get Started
-To complete this task you can either:
+   - PHP 7.1
+   - PHPUnit 6.0 
+   - [curl](http://php.net/manual/en/book.curl.php) & [json](http://php.net/manual/en/book.json.php) extensions must be enabled
 
-- [Register on MailChimp][10], create your API key to use in your application
-- Fork this repository, update the code base and send the URL of your repository to the reviewer(s)
-- Clone this repository into your local environment, update the code base and send a zip of the repository to the reviewer(s)
 
-[1]: https://loyaltycorp.com.au
-[2]: https://lumen.laravel.com
-[3]: http://developer.mailchimp.com/documentation/mailchimp/reference/overview
-[4]: http://developer.mailchimp.com/documentation/mailchimp/reference/lists
-[5]: http://developer.mailchimp.com/documentation/mailchimp/reference/lists/members
-[6]: http://www.doctrine-project.org/projects/orm.html
-[7]: https://www.laraveldoctrine.org/docs/1.3/orm
-[8]: https://github.com/pacely/mailchimp-api-v3
-[9]: https://getcomposer.org/
-[10]: https://login.mailchimp.com/signup/
+
+## Installation and Activation
+
+This section outlines the steps to install the MailChim Services code.
+
+1. Download a ZIP archive of this repository by clicking the "Clone or download" dropdown button, then "Download ZIP".
+2. Place it under the htdocs folder to run it.
+3. Follow SampleCode directory to see how to call CreateNewList, AddNewMember, DeleteMember, DeleteList API's.
+4. Run the index.php file to run the calls in sequence.
+5. Provide the field values in front end to create correct data object.
+
+
+
+
